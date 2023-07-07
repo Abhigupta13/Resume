@@ -1,0 +1,288 @@
+%-------------------------
+% Resume in Latex
+% Author  : Abhishek Kumar Gupta
+% Based off of: https://github.com/Abhigupta13/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\graphicspath{ {./images/} }
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\footskip}{4.08003pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.4in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+% \begin{left}
+    % \begin{wrapfigure}{r}{0.2\textwidth}
+    %     {\vspace*{+10\textwidth}\includegraphics[width=0.3\textwidth]{images/logo.png}}
+    % \end{wrapfigure}
+    {\vspace{+9pt}\Huge \scshape Abhishek Kumar Gupta} \\ \vspace{+6pt}
+    Rohtas, Bihar - 821310 \\ \vspace{+8pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 8107843028 ~ \href{mailto:anubhavshivahre@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{abhishekkumargupta22110@gmail.com}} ~
+    \href{https://www.linkedin.com/in/abhigupta13/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/abhigupta13}}~
+    \href{https://github.com/Abhigupta13/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/Abhigupta13}}\   
+    \href{https://codeforces.com/profile/akgupta07}{\underline{codeforces.com/profile/akgupta07}}
+    \href{https://www.codechef.com/users/abhigupta07} 
+        {\underline {codechef.com/users/abhigupta07}}\
+    \vspace{+2pt}
+% \end{left}
+
+% \begin{wrapfigure}{r}{0.4\linewidth}
+%     \includegraphics[width=\linewidth]{images/profile.png}
+% \end{wrapfigure}
+
+%-----------EDUCATION-----------
+\section{Education}
+\vspace{+4pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Information Technology Ranchi}{Dec. 2021 -- Present}
+      {B. Tech. in \textbf{Computer Science and Engineering} (CGPA 8.83)}{Ranchi, Jharkhand}
+    \resumeSubheading{Central Public School, Talwandi}{April 2018 -- April 2020}
+    {Intermediate (distinction) }{Kota, Rajasthan}
+  \resumeSubHeadingListEnd
+%------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Algorithms Analysis
+%                 \item Advanced Algorithms
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+
+\section{Projects}
+    \vspace{+1pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+      {\href{https://github.com/Abhigupta13/API_Gateway-Airline}{\raisebox{0.0\height}\faLink\ {\textbf{BookMyAirline}}} $|$ \emph{ExpressJs, MySQL, RabbitMQ, Axios, JWT, AWS(EC2)}}{Jun 2023}
+      \resumeItemListStart
+        \resumeItem{Developed backend of a Airling Booking Management System built using \textbf{microservices} architecture and every microservice is built by \textbf{MVC} architecture.}
+        \resumeItem{An API Gateway has been established to receive user requests, which are then directed to various microservices. The routing and communication between these microservices is facilitated using the \textbf{axios} library.}
+        \resumeItem{ Implemented Authentication using \textbf{JWT} token. Once registered, users can search and book flights through the system.}
+        \resumeItem{Implemented \textbf{RabbitMQ} (message queue) between booking and reminder service. After booking a flight, user receives an email of successfull booking.}
+         \resumeItemListEnd
+      
+      \vspace{-9pt}
+        \resumeProjectHeading
+          {\href{https://github.com/Abhigupta13/Twitter_Dev_MongoDB}{\raisebox{0.0\height}\faLink\ {\textbf{TweetTweet}}} $|$ \emph{ExpressJs, MongoDB, Jest, PassportJs, AWS S3}}{july 2023}
+          \resumeItemListStart
+            \resumeItem{Backend of a Twitter like application where user can create tweet with hashtags, delete their tweet, like tweets, comment on tweet and comment on a comment.}
+            \resumeItem{Implemented User Sign Up, Sign In and User Authentication using \textbf{PassportJS}.}
+            \resumeItem{Wrote unit tests for creating tweets and user sign up using \textbf{Jest}.}
+          \resumeItemListEnd
+          \vspace{-9pt}
+      \resumeProjectHeading
+          {\href{https://github.com/Abhigupta13/chatApp-socket-nodeJs}{\raisebox{0.0\height}\faLink\ {\textbf{Chat App}}} $|$ \emph{Express Js, Socket.io, MongoDB, EJS}}{July 2023}
+          \resumeItemListStart
+            \resumeItem{A simple Chat App implemented using \textbf{Socket.io} library which internally uses websocket protocol.}
+            \resumeItem{Socket Rooms are used to chat between group of user privately.}
+          \resumeItemListEnd
+     
+          \vspace{-9pt}
+      \resumeProjectHeading
+          {\href{https://github.com/Abhigupta13/chatApp-socket-nodeJs}{\raisebox{0.0\height}\faLink\ {\textbf{NewsWave}}} $|$ \emph{NodeJs, ReactJs , Bootstarp, REST API}}{Mar 2023}
+          \resumeItemListStart
+          \resumeItem{Developed a News React app that allows users to browse and read the latest news articles. It provides an intuitive user interface where users can
+view news from various sources and categories.}
+            \resumeItem{Navigation is implemented by React-Router. }
+            
+            % \resumeItem{The API used in this project is not free now so I can’t deploy this website. Code of this project is on my github profile}
+          \resumeItemListEnd
+     
+          \vspace{-9pt}
+
+       \resumeProjectHeading
+          {\href{https://github.com/Anubhavgupta18/Bin-There}{\raisebox{0.0\height}\faLink\ {\textbf{HerSafety}}} $|$ \emph{ReactJs, BootStrap, NodeJs}}{Apr 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a fully functional state web portal for women sexual harassment at workplace.}
+            \resumeItem{ Web app provides women to share harassment and assault incidents anonymously.}
+            \resumeItem{This website provides top 10 near by \textbf{NGOs} for women support.}
+           \resumeItem{Allows users to share tips on how to counter incidents and learn from prior victim’s experiences.}
+          \resumeItemListEnd
+          \vspace{-25pt}
+
+        % \resumeProjectHeading
+        %   {\href{https://github.com/EricLiclair/firebaseChatapp}{\raisebox{0.0\height}\faLink\ {\textbf{Chat App}}} $|$ \emph{Firebase( Auth, Realtime Database, Hosting), React, AntDesign}}{Aug 2021}
+        %   \resumeItemListStart
+        %     \resumeItem{A Web application developed using \textbf{React}, \textbf{AntdDesign} and \textbf{Firebase} with Authentication.}
+        %     \resumeItem{The application provides an interface for users to chat one-to-one, and also provides a list of all users (online and offline) to select from.}
+        %   \resumeItemListEnd
+          \vspace{13pt}
+
+        % \resumeProjectHeading
+        %   {\href{https://github.com/EricLiclair/testapi}{\raisebox{0.0\height}\faLink\ {\textbf{Test API}}} $|$ \emph{Django, Django Rest Framework, drf-yasg, Token Auth, Redoc}}{Jun 2021}
+        %   \resumeItemListStart
+        %     \resumeItem{Developed a concept of API containing the details of the students of institute to be used by the students.}
+        %     \resumeItem{Exposes an \textbf{endpoint to generate token} which can be exchanged over other endpoints of the API to access the students database.}
+        %     \resumeItem{Implemented \textbf{role based authorization} using \textbf{generic and hybrid API Views}.}
+        %   \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{+1pt}
+
+%-----------CERTIFICATES-----------
+
+\section{Achievements}
+    \vspace{+1pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+      {\href{https://www.codechef.com/users/abhigupta07}{\raisebox{0.0\height}\faLink\ {\textbf{CodeChef}}} $|$ \emph{Highest Rating 1484}}{}
+      \resumeItemListStart
+        \resumeItem{ Got a \textbf{887th} Rank in Starters 62 div-3 Contest.}
+        \resumeItemListEnd
+        \vspace{-6pt}
+         \resumeProjectHeading
+      {\href{https://www.codechef.com/users/abhigupta07}{\raisebox{0.0\height}\faLink\ {\textbf{Competitive Programming}}} $|$ \emph{DSA}}{}
+      \resumeItemListStart
+        \resumeItem{Solved 250+ questions on codechef, codeforces and geeksforgeeks.}
+        
+         \resumeItemListEnd
+    \vspace{-5pt}
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\vspace{+1pt}
+ \begin{itemize}[leftmargin=0.0in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, JavaScript, C, Python, HTML, CSS} \\
+     \vspace{+4pt}
+     \textbf{Developer Tools}{: VS Code } \\
+     \vspace{+4pt}
+     \textbf{Technologies/Frameworks}{: ReactJs, Git, GitHub, Bootstrap, NodeJs, ExpressJs, MongoDB, MySQL, REST API, Amazon Web Services(AWS)(EC2 and S3), Jest, RabbitMQ etc} \\
+    }
+    \vspace{+4pt}
+     \textbf{Architectures}{: Model-View-Controller(MVC) , microService }
+     \vspace{+4pt}
+    }
+ \end{itemize}
+\vspace{-15pt}
+
+% %-----------INVOLVEMENT---------------
+% \section{Leadership / Extracurricular}
+% \vspace{-1pt}
+%         \resumeSubheading{Coordinator-CP Wing}{Nov 2022 -- Present}{House of Geeks, Technical Society}{IIIT Ranchi}
+%         \vspace{-1pt}
+%             \resumeItemListStart
+%                 \resumeItem{Developed a CP culture in the college by Organising technical workshops and speaker sessions to encourage all the participants and fellow mates towards competitive programming.}
+%                 \resumeItem{Conducted Coding Contests on CP platforms like Codeforces and HackerRank.}
+%             \resumeItemListEnd
+            
+
+
+
+\end{document}
